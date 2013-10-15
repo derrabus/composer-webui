@@ -4,8 +4,6 @@ namespace Rabus\Composer\WebUI\Controller;
 
 use Composer\Composer;
 use Composer\Package\PackageInterface;
-use Silex\Application;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class MainController
