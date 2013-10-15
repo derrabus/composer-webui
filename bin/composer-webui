@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+
+system(PHP_BINARY . ' -S 127.0.0.1:8000 -t ' . dirname(__DIR__) . '/web ' . dirname(__DIR__) . '/web/index.php');

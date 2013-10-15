@@ -1,0 +1,19 @@
+{
+    "name": "derrabus/composer-webui",
+    "description": "A web interface for composer.",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Alexander M. Turek",
+            "email": "me@derrabus.de"
+        }
+    ],
+    "require": {
+        "php": "~5.4",
+        "composer/composer": "dev-master@dev",
+        "silex/silex": "~1.1"
+    },
+    "autoload": {
+        "psr-0": { "Rabus\\Composer\\WebUI\\": "src/" }
+    }
+}
