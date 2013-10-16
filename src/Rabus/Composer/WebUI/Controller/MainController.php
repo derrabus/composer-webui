@@ -26,9 +26,13 @@ class MainController
      */
     public function indexAction()
     {
-        $content = '<html><body><table>';
+        $repository = $this->composer->getRepositoryManager()->getLocalRepository();
 
-        foreach ($this->composer->getRepositoryManager()->getLocalRepository()->getPackages() as $currentPackage) {
+        $content = '<html><body><h1>'
+            . $this->composer->getPackage()->getName()
+            . '</h1><table>';
+
+        foreach ($repository->getPackages() as $currentPackage) {
             /** @var PackageInterface $currentPackage */
             $content .= '<tr><td>'
                 . $currentPackage->getPrettyName()
